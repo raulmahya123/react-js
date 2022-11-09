@@ -9,15 +9,17 @@ import Product from './component/Product';
 import Loginnn from './component/Loginnn'
 
 
+
+
 function App() {
   return (
     <Router>
     <div className="App">
         <Routes>
-    <Route index path="login" element={<Layout/>}/>
+    <Route index path="/Dasboard" element={<Layout/>}/>
      <Route path="/" element={<Loginnn/>}>
-     <Route  element={<Dasboard/>}/>
-     <Route path="products" element={<Product/>}/>
+            <Route path="/" element={<Dasboard />} />
+     <Route path="/" element={<Product/>}/>
      </Route>
      
      </Routes>

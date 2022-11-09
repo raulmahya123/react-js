@@ -9,17 +9,20 @@ import {
 	HiOutlineCog
 } from 'react-icons/hi'
 
+
+
+
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
 		label: 'Dashboard',
-		path: '/',
+		path: '/Product',
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/products',
+		key: 'product',
+		label: 'Product',
+		path: '/Product',
 		icon: <HiOutlineCube />
 	},
 	{
