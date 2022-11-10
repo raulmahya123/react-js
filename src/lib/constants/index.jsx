@@ -1,13 +1,13 @@
 import {
 	HiOutlineViewGrid,
-	HiOutlineCube,
-	HiOutlineShoppingCart,
 	HiOutlineUsers,
 	HiOutlineDocumentText,
 	HiOutlineAnnotation,
 	HiOutlineQuestionMarkCircle,
 	HiOutlineCog
 } from 'react-icons/hi'
+import { FcTodoList } from 'react-icons/fc' 
+import {FiNavigation2} from 'react-icons/fi'
 
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
@@ -17,16 +17,16 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/products',
-		icon: <HiOutlineCube />
+		key: 'todolist',
+		label: 'Todolist',
+		path: '/todolist',
+		icon: <FcTodoList />
 	},
 	{
-		key: 'orders',
-		label: 'Orders',
-		path: '/orders',
-		icon: <HiOutlineShoppingCart />
+		key: 'navigation',
+		label: 'Navigation',
+		path: '/navigation',
+		icon: <FiNavigation2 />
 	},
 	{
 		key: 'customers',

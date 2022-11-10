@@ -3,6 +3,10 @@ import Layout from './component/shared/Layout'
 import Register from './pages/Register'
 import Dasboard from './pages/Dasboard'
 import Product from './pages/Products'
+import Orders from './pages/Orders'
+import Customer from './pages/Customer'
+import Transcation from './pages/Transcation'
+import Nessages from './pages/Nessages'
 
 
 
@@ -15,11 +19,18 @@ function App() {
     <Router>
     <div className="App">
         <Routes>
-              <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Register/>}/>  
+              <Route path="/Layout" element={<Layout />}>
                     <Route index element={<Dasboard />} />
-                    <Route path="products" element={<Product />} />
+                    <Route path="todolist" element={<Product />} />
+                    <Route path="Navigation" element={<Orders />} />
+                    <Route path="Customers" element={<Customer />} />
+                    <Route path="Transactions" element={<Transcation />} />
+                    <Route path="Messages" element={<Nessages />} />
+            
+
           </Route>   
-      <Route path="login" element={<Register/>}/>     
+         
      </Routes>
      </div>
      </Router>
