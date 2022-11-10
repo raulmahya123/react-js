@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
 }
 
@@ -35,12 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-
-.strike_none{
-    text-decoration:none;
-}
-.green{
- background-color:green !important;   
 }
