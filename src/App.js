@@ -1,12 +1,11 @@
-import {BrowserRouter as Router,
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './component/shared/Layout'
+import Register from './pages/Register'
+import Dasboard from './pages/Dasboard'
+import Product from './pages/Products'
 
-  Route,
-  Routes
-} from 'react-router-dom'
-import Layout from "./component/dasboard/Layout";
-import Dasboard from './component/Dasboard';
-import Product from './component/Product';
-import Loginnn from './component/Loginnn'
+
+
 
 
 
@@ -16,14 +15,12 @@ function App() {
     <Router>
     <div className="App">
         <Routes>
-    <Route index path="/Dasboard" element={<Layout/>}/>
-     <Route path="/" element={<Loginnn/>}>
-            <Route path="/" element={<Dasboard />} />
-     <Route path="/" element={<Product/>}/>
-     </Route>
-     
+              <Route path="/" element={<Layout />}>
+                    <Route index element={<Dasboard />} />
+                    <Route path="products" element={<Product />} />
+          </Route>   
+      <Route path="login" element={<Register/>}/>     
      </Routes>
-
      </div>
      </Router>
   );
