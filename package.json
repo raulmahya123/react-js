@@ -4,13 +4,18 @@
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.4",
+    "@react-google-maps/api": "^2.16.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "browserify-zlib": "^0.2.0",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
+    "google-sign-in": "^3.0.3",
+    "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
     "react-icon": "^1.0.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
@@ -43,8 +48,18 @@
     ]
   },
   "devDependencies": {
+    "assert": "^2.0.0",
     "autoprefixer": "^10.4.12",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1"
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwindcss": "^3.2.1",
+    "url": "^0.11.0"
   }
 }

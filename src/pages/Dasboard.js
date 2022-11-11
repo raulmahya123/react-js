@@ -4,6 +4,7 @@ import TransactionChart from '../component/TransactionChart'
 import RecentOrders from '../component/RecentOrders'
 import BuyerProfilePieChart from '../component/BuyerProfilePieChart'
 import PopularProducts from '../component/PopularProducts'
+import Products from './Products'
 
 
 export default function Dashboard() {
@@ -17,6 +18,10 @@ export default function Dashboard() {
 			<div className="flex flex-row w-full gap-4">
 				<RecentOrders />
 				<PopularProducts />
+			</div>
+						<div className="flex flex-row w-full gap-4">
+				<Products />
+				
 			</div>
 		</div>
 	)

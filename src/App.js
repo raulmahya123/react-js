@@ -17,10 +17,10 @@ import Nessages from './pages/Nessages'
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div>
         <Routes>
-          <Route path="/" element={<Register/>}/>  
-              <Route path="/Layout" element={<Layout />}>
+          <Route path="/register" element={<Register/>}/>  
+              <Route path="" element={<Layout />}>
                     <Route index element={<Dasboard />} />
                     <Route path="todolist" element={<Product />} />
                     <Route path="Navigation" element={<Orders />} />
